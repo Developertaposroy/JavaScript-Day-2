@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Working With Form Input</title>
+</head>
+<body>
+<input id="Num1"><br><br>
+<input id="Num2"><br><br>
+<input id="Num3"><br><br>
+<button onclick="TwoNum()">Add</button>
+
+<script>
+    function TwoNum(){
+        let Number1=document.getElementById('Num1').value;
+        let Number2=document.getElementById('Num2').value;
+        let Number3=document.getElementById('Num3').value;
+        let result = parseFloat(Number1)+parseFloat(Number2)+parseFloat(Number3);
+        alert(result)
+    }
+</script>
+
+
+</body>
+</html>
