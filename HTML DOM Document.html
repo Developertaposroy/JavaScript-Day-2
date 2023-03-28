@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document</title>
+</head>
+<body>
+    <p></p>
+    <p></p>
+    <p>  </p>
+    <p></p>
+    <p></p>
+    <button onclick="demo()" >domain</button>
+    <button onclick="demo2()" >URL</button>
+    <button onclick="demo3()" >lastModified</button>
+    <button onclick="demo4()" >title</button>
+    <button onclick="demo5()" >replace</button>
+    <button onclick="demo6()" >new Windose</button>
+    <button onclick="demo7()" >count</button>
+    <script>
+        function demo(){
+           let info=document.domain;
+           document.getElementsByTagName('p')[0].innerHTML=info
+        }
+        function demo2(){
+            let info =document.URL;
+            document.getElementsByTagName('p')[0].innerHTML=info
+        }
+        function demo3(){
+            var info=document.lastModified;
+            document.getElementsByTagName('p')[0].innerHTML=info
+        } 
+        function demo4(){
+            var info=document.title;
+            document.getElementsByTagName('p')[0].innerHTML=info
+        }
+        function demo5(){
+            document.open("text/html","replace")
+            document.write("<h2>Amar Name Tapos<h2>")
+            document.close
+        }
+        function demo6(){
+           var ne = window.open();
+           ne.document.open();
+           ne.document.write("New windos open");
+           ne.document.close()
+
+        }
+
+        // count
+         function demo7(){
+            var items = document.getElementsByTagName('p');
+            var MyCount =items.length;
+            alert(MyCount)
+
+         }
+         
+ 
+        
+    </script>
+</body>
+</html>
